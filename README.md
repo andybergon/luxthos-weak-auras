@@ -1,6 +1,6 @@
 # luxthos-weak-auras
 
-Repo to experiment on hosting WA code and visualize how changes will look like in a PR.
+Repo to experiment on hosting WA code and visualize how changes will look like in a PR.  
 Maybe also try a release process to automate the update of all classes for common components like resources or general options.
 
 Resources:
