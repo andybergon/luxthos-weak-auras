@@ -452,12 +452,17 @@ function local_env.UpdateResources()
     ResizeAnchorFrame()
     
     local castBar = WeakAuras.GetRegion(CAST_BAR)
-    
+
     if castBar then
         castBar:SetParent(UIParent)
         
         if local_env.parentFrame then
             castBar:SetScale(local_env.parentFrame:GetScale())
+        end
+
+        if local_env.config.resources.cast_bar.show_icon then
+            local should_show_castbar_icon = local_env.config.resources.cast_bar.show_icon
+            castBar:SetIconVisible(should_show_castbar_icon)
         end
     end
 end
